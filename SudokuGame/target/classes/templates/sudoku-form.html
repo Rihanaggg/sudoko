@@ -1,0 +1,20 @@
+<!-- <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sudoku Game</title>
+</head>
+<body>
+    <form th:action="@{/update}" method="post" th:object="${sudokuGrid}">
+        
+        <table>
+            <tr th:each="row, rowNum : ${grid.cells}">
+                <td th:each="cell, colNum : ${row}">
+                    <input type="number" th:field="*{cells[__${rowNum.index}__][__${colNum.index}__].value}" min="1" max="9"/>
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Play</button>
+    </form>
+    
+</body>
+</html> -->
